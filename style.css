@@ -1,0 +1,33 @@
+h1, h2 {
+   text-align: center; 
+}
+
+#main {
+    color: darkblue;
+    background-color: turquoise;
+}
+
+#sidebar {
+    background-color: #F28500;
+    color: white;
+}
+
+/* this only applies to mobile!! */
+@media (max-width: 699px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* THESE ARE DESKTOP STYLES!!! */
+@media (min-width: 700px) {
+    #container {
+        display: flex;
+    }
+    #main {
+        width: 60%;
+    }
+    #sidebar {
+        width: 40%;
+    }
+}
