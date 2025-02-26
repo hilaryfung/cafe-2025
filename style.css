@@ -1,15 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
 h1, h2 {
    text-align: center; 
 }
 
-#main {
-    color: darkblue;
-    background-color: turquoise;
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
-#sidebar {
-    background-color: #F28500;
-    color: white;
+#main, #sidebar {
+    border: 2px solid #F28500;
+    border-radius: 15px;
+    color: #F28500;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* this only applies to mobile!! */
@@ -17,12 +27,17 @@ h1, h2 {
     .desktop-only {
         display: none;
     }
+
+    #main {
+        margin-bottom: 15px;
+    }
 }
 
 /* THESE ARE DESKTOP STYLES!!! */
 @media (min-width: 700px) {
     #container {
         display: flex;
+        gap: 20px;
     }
     #main {
         width: 60%;
